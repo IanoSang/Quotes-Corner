@@ -1,12 +1,11 @@
 <div>
   <h1>Quotes Corner</h1>
   <hr>
-  <ul>
 
-    <li *ngFor='let quote of quotes'>
-      {{quote.id}}. {{quote.name}}
-      <app-quotes-details [quotes]="quote"></app-quotes-details>
-    </li>
-  </ul>
+  <div *ngFor='let quote of quotes;let i = index'>
+    <li>{{quote.id}}. {{quote.name}}</li>
+    <button (click)='toggleDetails(i)'>Quote Details</button>
+    <app-quotes-details *ngIf='quote.showDescription' [quotes]='quote'></app-quotes-details>
+  </div>
 
 </div>
