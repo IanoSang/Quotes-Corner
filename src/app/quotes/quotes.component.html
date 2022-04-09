@@ -3,7 +3,7 @@
   <hr>
 
   <div *ngFor='let quote of quotes;let i = index'>
-    <li>{{quote.id}}. {{quote.quote}}</li>
+    <li appHighlighter>{{quote.id}}. {{quote.quote}}</li>
     <button (click)='toggleDetails(i)'>Quote Details</button>
     <app-quotes-details *ngIf="quote.showDescription" [quotes]='quote' (isComplete)= 'quotesDelete($event,i)'></app-quotes-details>
   </div>
