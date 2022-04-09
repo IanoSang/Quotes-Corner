@@ -9,7 +9,7 @@ import {Quotes} from "../quotes";
 })
 export class QuotesFormComponent implements OnInit {
 
-  public newQuote: Quotes = new Quotes(0,"","");
+  public newQuote: Quotes = new Quotes(0, '', '', '', '0', '0');
   @Output() addQuote = new EventEmitter<Quotes>();
   @Output() close = new EventEmitter();
 
@@ -20,6 +20,9 @@ export class QuotesFormComponent implements OnInit {
       0,
       '',
       '',
+      '',
+      '0',
+      '0'
     );
 
   }
