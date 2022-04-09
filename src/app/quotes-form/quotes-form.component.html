@@ -3,7 +3,9 @@
   <hr>
 
 
-    <form (ngSubmit)='submitQuote()' #quoteForm='ngForm'>
+    <form (ngSubmit)="quoteForm.form.valid && submitQuote();
+      quoteForm.resetForm({});
+      closeModal()" #quoteForm='ngForm'>
       <div class="form-group">
 
         <label for="name">Name</label>

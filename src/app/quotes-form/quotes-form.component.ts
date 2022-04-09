@@ -11,27 +11,23 @@ export class QuotesFormComponent implements OnInit {
 
   public newQuote: Quotes = new Quotes(0,"","");
   @Output() addQuote = new EventEmitter<Quotes>();
+  @Output() close = new EventEmitter();
 
 
   submitQuote(){
-    // @ts-ignore
-    if (this.newQuote == ''){
-
-    }
-    else {
-      // @ts-ignore
-      this.addQuote.emit(this.newQuote);
-    }
+    this.addQuote.emit(this.newQuote);
+    this.newQuote = new Quotes(
+      0,
+      '',
+      '',
+    );
 
   }
+  closeModal() {
+    this.close.emit();
+  }
 
-//   if (this.newTask == '') {
-// }
-// else {
-//   // @ts-ignore
-//   this.items.push(this.newTask);
-//   this.newTask = '';
-// }
+
 
   constructor() { }
 
