@@ -14,7 +14,7 @@ export class QuotesComponent implements OnInit {
     new Quotes(2,'It\'s really that simple: Program, or be programmed', 'By Software Dev'),
     new Quotes(3, 'The greatest glory in living lies not in never falling, but in rising every time we fall', 'By Unknown'),
     new Quotes(4, 'The way to get started is to quit talking and begin doing', 'By Someone'),
-    new Quotes(4, 'The way to get started is to quit talking and begin doing', 'By Someone'),
+    new Quotes(5, 'Furaha sio kitu kilichoundwa tayari. Inakuja kutoka kwa matendo yako.', 'Swahili Quote'),
     new Quotes(6, 'We live in a country where our young ladies who have recently attained the age of puberty cannot afford sanitary pads, but our men and women in public offices have iPads which they do not even know how to use.', 'By Patrick Lumumba'),
   ];
   toggleDetails(index: string | number){
@@ -28,7 +28,7 @@ export class QuotesComponent implements OnInit {
     }
 
     if (isComplete) {
-      let toDelete = confirm(`Are you sure you want to delete ${this.quotes[index].name}?`)
+      let toDelete = confirm(`Are you sure you want to delete ${this.quotes[index].description}?`)
 
       if (toDelete) {
         this.quotes.splice(index, 1)
