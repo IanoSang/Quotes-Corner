@@ -12,6 +12,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { TimerPipe } from './timer.pipe';
 
+
 @NgModule({
   declarations: [
     AppComponent,
