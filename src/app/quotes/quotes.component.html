@@ -12,7 +12,7 @@
       <div class="card-footer">
         2 days ago
       </div>
-      <button (click)='toggleDetails(i)'>Quote Details</button>
+      <button (click)='toggleDetails(i)' class=" btn btn-outline-info">Quote Details</button>
       <app-quotes-details *ngIf="quote.showDescription" [quotes]='quote' (isComplete)= 'quotesDelete($event,i)'></app-quotes-details>
     </div>
   </div>
