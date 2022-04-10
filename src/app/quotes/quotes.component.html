@@ -6,9 +6,9 @@
   <div class="row">
   <div class="card text-center col-md-8">
 
-  <div class="row">
+  <div class="row" id="bg">
     <div *ngFor='let quote of quotes;let i = index' class="card-body col-6">
-      <li appHighlighter>{{quote.id}}. {{quote.quote}}</li>
+      <li appHighlighter>"{{quote.quote}}"</li>
       <div class="card-footer">
         <br> <button type="button" onclick="incrementLikes(vote)">Upvote</button>
         {{quote.upvote}} <button type="button" onclick="incrementDislikes(vote)">Downvote</button>{{quote.downvote}}
