@@ -1,6 +1,28 @@
-# Quotes
+# Quotes-Corner
+ This is a web application where users can create quotes and  view already created qoutes. They can also voted on whether those quotes are terrible or are inspirational. 
+ 
+## Behaviour Driven Development
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.1.
+The user is able to:
+<ul>
+  <li>Create a quote</li>
+  <li>Like a quote</li>
+  <li>Dislike a quote</li>
+  <li>See Quote Details</li>
+  <li>Delete quote</li>
+  <li>See all published quotes</li>
+  <li>See Time the Quote has Lasted</li>
+</ul>
+
+## Technologies Used
+<ol>
+  <li>HTML</li>
+  <li>CSS</li>
+  <li>Boostrap</li>
+  <li>Angular CLI</li>
+  <li>FontAwosome</li>
+ 
+</ol>
 
 ## Development server
 
