@@ -9,6 +9,7 @@ import { QuotesFormComponent } from './quotes-form/quotes-form.component';
 import {FormsModule} from "@angular/forms";
 import { HighlighterDirective } from './highlighter.directive';
 import { NavbarComponent } from './navbar/navbar.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { NavbarComponent } from './navbar/navbar.component';
     QuotesFormComponent,
     HighlighterDirective,
     NavbarComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
