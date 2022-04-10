@@ -10,6 +10,7 @@ import {FormsModule} from "@angular/forms";
 import { HighlighterDirective } from './highlighter.directive';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
+import { TimerPipe } from './timer.pipe';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { FooterComponent } from './footer/footer.component';
     HighlighterDirective,
     NavbarComponent,
     FooterComponent,
+    TimerPipe,
   ],
   imports: [
     BrowserModule,

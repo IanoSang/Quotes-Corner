@@ -1,5 +1,4 @@
 import { Component, OnInit,  Output, EventEmitter} from '@angular/core';
-import {Quote} from "@angular/compiler";
 import {Quotes} from "../quotes";
 
 @Component({

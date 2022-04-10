@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit} from '@angular/core';
 import {Quotes} from "../quotes";
 
 
@@ -8,7 +8,7 @@ import {Quotes} from "../quotes";
   templateUrl: './quotes.component.html',
   styleUrls: ['./quotes.component.css']
 })
-export class QuotesComponent implements OnInit {
+export class QuotesComponent implements OnInit{
   quotes:Quotes[] = [
     new Quotes(1, 'Sometimes it falls upon a generation to be great, you can be that generation', 'By Nelson Mandela', 'Ian Sang', '0', '0'),
     new Quotes(2, 'In the emerging highly programmed landscape ahead, you will either create the software or you will be the software, It\'s really that simple: Program, or be programmed', 'Douglas Rushoff', 'Ian Sang', '0', '0',),
@@ -23,10 +23,6 @@ export class QuotesComponent implements OnInit {
   }
 
   quotesDelete(isComplete: any, index: number) {
-    function constructor() {
-
-    }
-
     if (isComplete) {
       let toDelete = confirm(`Are you sure you want to delete ${this.quotes[index].authorName}?`)
 
