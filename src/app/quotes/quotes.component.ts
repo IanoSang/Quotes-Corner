@@ -35,6 +35,7 @@ export class QuotesComponent implements OnInit {
       }
     }
   }
+
   addNewQuote(quote: Quotes){
     let goalLength = this.quotes.length;
     quote.id = goalLength+1;

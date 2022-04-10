@@ -1,14 +1,28 @@
-<div>
-  <h1>Quotes Corner</h1>
-  <hr>
 
-  <div *ngFor='let quote of quotes;let i = index'>
-    <li appHighlighter>{{quote.id}}. {{quote.quote}}</li>
-    <button (click)='toggleDetails(i)'>Quote Details</button>
-    <app-quotes-details *ngIf="quote.showDescription" [quotes]='quote' (isComplete)= 'quotesDelete($event,i)'></app-quotes-details>
+<div class="nav">
+<app-navbar></app-navbar>
+</div>
+<div class="container-fluid">
+  <div class="row">
+  <div class="card text-center col-md-8">
+
+  <div class="row">
+    <div *ngFor='let quote of quotes;let i = index' class="card-body col-6">
+      <li appHighlighter>{{quote.id}}. {{quote.quote}}</li>
+      <div class="card-footer">
+        2 days ago
+      </div>
+      <button (click)='toggleDetails(i)'>Quote Details</button>
+      <app-quotes-details *ngIf="quote.showDescription" [quotes]='quote' (isComplete)= 'quotesDelete($event,i)'></app-quotes-details>
+    </div>
   </div>
-  <div class="col-md-6">
-    <app-quotes-form (addQuote)="addNewQuote($event)"></app-quotes-form>
   </div>
+
+    <div class="col-md-4">
+      <app-quotes-form (addQuote)="addNewQuote($event)"></app-quotes-form>
+    </div>
+  </div>
+
+
 
 </div>

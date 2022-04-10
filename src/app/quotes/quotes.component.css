@@ -1,0 +1,8 @@
+.card{
+  display: inline-flex;
+  flex-direction: row;
+
+}
+.row{
+  margin-top: 5%;
+}
