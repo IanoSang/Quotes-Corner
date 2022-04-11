@@ -1,5 +1,4 @@
-
-<div class="nav">
+<div class="nav" xmlns="http://www.w3.org/1999/html">
 <app-navbar></app-navbar>
 </div>
 <div class="container-fluid">
@@ -7,16 +6,32 @@
   <div class="card text-center col-md-8">
 
   <div class="row" id="bg">
-    <div *ngFor='let quote of quotes;let i = index' class="card-body col-6">
-      <li appHighlighter>"{{quote.quote}}"</li>
-      <div class="card-footer">
-        <br> <button type="button" onclick="incrementLikes(vote)">Upvote</button>
-        {{quote.upvote}} <button type="button" onclick="incrementDislikes(vote)">Downvote</button>{{quote.downvote}}
-        <span class="timer">{{counter|timer}} Hours</span>
+    <div  class="card-body col-6">
+      <ul *ngFor='let quote of quotes;let i = index'>
+      <div *ngIf="highest()===quote.upvote && quote.upvote>0;then highlight else empty">
       </div>
-      <button (click)='toggleDetails(i); startTimer()' class=" btn btn-outline-info">Quote Details</button>
+        <ng-template #highlight>
+          <li appHighlighter>"{{quote.quote}}"</li>
 
-      <app-quotes-details *ngIf="quote.showDescription && counter" [quotes]='quote' (isComplete)= 'quotesDelete($event,i)'></app-quotes-details>
+        </ng-template>
+
+        <ng-template #empty>
+          <li>"{{quote.quote}}"<br>
+          </li>
+        </ng-template>
+        <p id="author">Author: {{quote.authorName}}</p>
+        {{quote.upvote}}  {{quote.downvote}}
+        <div class="card-footer">
+          <button (click)="startTimer()">Time</button>
+          <span class="timer">{{counter|timer}} Hours</span>
+          <button (click)='toggleDetails(i)' class=" btn btn-outline-info">Quote Details</button>
+
+        </div>
+
+        <app-quotes-details *ngIf="quote.showDescription" [quotes]='quote' (isComplete)= 'quotesDelete($event,i)'></app-quotes-details>
+
+
+      </ul>
 
     </div>
 
