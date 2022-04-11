@@ -18,7 +18,7 @@ export class QuotesComponent implements OnInit,OnDestroy{
 
 
   quotes:Quotes[] = [
-    new Quotes(1, 'Sometimes it falls upon a generation to be great, you can be that generation', 'Nelson Mandela', 'Ian Sang', 1, 0),
+    new Quotes(1, 'Sometimes it falls upon a generation to be great, you can be that generation', 'Nelson Mandela', 'Ian Sang', 0, 0),
     new Quotes(2, 'In the emerging highly programmed landscape ahead, you will either create the software or you will be the software, It\'s really that simple: Program, or be programmed', 'Douglas Rushoff', 'Ian Sang', 0, 0),
     new Quotes(3, 'The greatest glory in living lies not in never falling, but in rising every time we fall', 'Unknown', 'Ian Sang', 0, 0),
     new Quotes(4, 'The way to get started is to quit talking and begin doing', 'Someone', 'Ian Sang', 0, 0),

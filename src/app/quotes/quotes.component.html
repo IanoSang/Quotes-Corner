@@ -1,12 +1,10 @@
 <div class="nav" xmlns="http://www.w3.org/1999/html">
 <app-navbar></app-navbar>
 </div>
-<div class="container-fluid">
+<div class="container">
   <div class="row">
-  <div class="card text-center col-md-8">
+    <div  class="card-body col-8">
 
-  <div class="row" id="bg">
-    <div  class="card-body col-6">
       <ul *ngFor='let quote of quotes;let i = index'>
       <div *ngIf="highest()===quote.upvote && quote.upvote>0;then highlight else empty">
       </div>
@@ -29,21 +27,13 @@
         </div>
 
         <app-quotes-details *ngIf="quote.showDescription" [quotes]='quote' (isComplete)= 'quotesDelete($event,i)'></app-quotes-details>
-
-
       </ul>
 
     </div>
 
-  </div>
-  </div>
-
-    <div class="col-md-4">
+    <div class="col-4">
       <app-quotes-form (addQuote)="addNewQuote($event)"></app-quotes-form>
     </div>
   </div>
-
-
-
 </div>
 <app-footer></app-footer>
