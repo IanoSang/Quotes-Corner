@@ -1,7 +1,13 @@
-.row{
-  display: inline-flex;
-  flex-direction: row;
-
+.Source{
+  margin-left: 5%;
+}
+#upvote{
+  margin-left: 10%;
+  color: rgb(66,142,50);
+}
+#downvote{
+  margin-left: 5%;
+  color: rgb(199,54,30);
 }
 .row{
   margin-top: 5%;
