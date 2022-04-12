@@ -10,10 +10,13 @@
   color: rgb(199,54,30);
 }
 .row{
-  margin-top: 5%;
+  margin-top: 3%;
 }
 .btn{
   margin-top: 2%;
+}
+#toggle{
+  margin-left: 16%;
 }
 .timer{
   text-align: right;
