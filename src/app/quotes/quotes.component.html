@@ -25,12 +25,9 @@
         </cite></footer>
 
         <div class="card-footer">
-<!--          <p ></p>-->
-<!--         <button ("click",startTimer);></button>-->
-          <button (click)="startTimer()">Time</button>
+          <button (click)="startTimer()" class="btn btn-secondary">Time</button>
           <span>{{counter|timer}} Hours</span>
           <button (click)='toggleDetails(i)' class=" btn btn-outline-info" id="toggle">Quote Details</button>
-
         </div>
 
         <app-quotes-details *ngIf="quote.showDescription" [quotes]='quote' (isComplete)= 'quotesDelete($event,i)'></app-quotes-details>
