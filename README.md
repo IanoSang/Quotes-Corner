@@ -14,6 +14,10 @@ The user is able to:
   <li>See Time the Quote has Lasted</li>
 </ul>
 
+## Quotes Corner Layout
+<img width="1440" alt="Screenshot" src="https://github.com/IanoSang/Quotes-Corner/blob/main/src/assets/images/quote1.png">
+<img width="1440" alt="Screenshot" src="https://github.com/IanoSang/Quotes-Corner/blob/main/src/assets/images/quote2.png">
+
 ## Technologies Used
 <ol>
   <li>HTML</li>
@@ -47,3 +51,24 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## Reference
+* [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
+* [HTML](https://developer.mozilla.org/en-US/docs/Glossary/HTML)
+* [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+* [BOOSTRAP 5.1](https://getbootstrap.com/docs/5.0/getting-started/introduction/)
+* [Angular 13.1](https://angular.io/guide/what-is-angular)
+* [TypeScript](https://www.typescriptlang.org/)
+
+## Known Bugs
+No known bugs of particular point and time.
+
+## Licence
+[MIT License](https://github.com/IanoSang/Quotes-Corner/blob/main/LICENSE)
+
+
+## Authors Info
+I Can be reached by the email below for questions and comments
+Email - ianosang18@gmail.com
+<br>
+By- Sang Kipkoech Ian
